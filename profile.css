@@ -1,0 +1,824 @@
+body {
+    width: 100%;
+    height: 850px;
+    background-color: #ECE3E0;
+}
+
+/* Search input styling */
+.search-container {
+    position: absolute; 
+    top: 40px; 
+    left: 581px; 
+    width: 479px;
+    height: 34px; 
+    border-radius: 8px; 
+    border: 1px solid #3D3330; 
+    background-color: #ECE3E0; /* Background for the container */
+    z-index: 10; 
+    display: flex; 
+    align-items: center; /* Vertically centers items inside */
+    padding: 0 10px; 
+}
+
+.search-input {
+    width: 100%; 
+    height: 100%; 
+    padding-left: 30px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px; 
+    color: #3D3330; 
+    background-color: transparent; 
+    outline: none; }
+
+.search-input::placeholder {
+    color: #3D3330; /* Placeholder text color */
+    opacity: 0.7; /* Subtle placeholder text */
+}
+
+.search-icon {
+    position: absolute; /* Keeps it positioned inside the container */
+    left: 10px; /* Adjust icon's left position */
+    font-size: 16px; /* Matches design size */
+    color: #3D3330; /* Icon color */
+}
+
+
+/* Dropdown for suggestions */
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ECE3E0;
+    border: 1px solid #292424;
+    border-top: none;
+    z-index: 100;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.suggestions div:hover {
+    background-color: #ffffff;
+}
+
+
+.Rectangle1215 {
+    width: 240px;
+    height: 1370px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #30231F;
+    z-index: 1; /* Lower z-index to place it behind the headings */
+}
+
+.heading, .Menu, .Homepage, .Tools, .HireWeavers, .Products, .Marketplace, .Community,.Account,.Profile,.Helpcenter,.Logout {
+    position: fixed;
+    color: rgba(243, 235, 233, 0.75);
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 550;
+    z-index: 10; /* Higher z-index to ensure headings are above the rectangle */
+}
+.heading{
+    top: 20px;
+    left: 20px;
+    font-family: 'Lucida Handwriting', cursive;
+    color: #DFDFDF;
+}
+
+
+/* Position each heading */
+.Menu {
+    font-size: 20px;
+    top: 100px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 700;
+}
+
+.Homepage {
+    top: 135px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Tools {
+   
+    top: 170px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.HireWeavers {
+    top: 205px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Products {
+    top: 240px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Marketplace {
+    top: 275px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Community {
+    top: 310px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Account {
+    font-size: 20px;
+    top: 345px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 700;
+
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.Profile {
+    background-color: #160d0a;
+    padding-left: 35px;
+    padding-right: 152px;
+    top: 380px;
+    left: 0px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Helpcenter {
+    top: 415px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Logout {
+    top: 450px;
+    left: 35px;
+    color: rgb(136, 13, 13);
+    font-weight: 400;
+    font-size: 18px
+
+}
+.group-item {
+    position: absolute;
+    top: 0.77px;
+    left: 0px;
+    box-shadow: 0px 1.6967471837997437px 1.7px rgba(0, 0, 0, 0.25);
+    border-radius: 5.18px;
+    background-color: #fff;
+    width: 355.9px;
+    height: 350.6px;
+    }
+    .div {
+    position: absolute;
+    top: 133.48px;
+    left: 260.81px;
+    font-weight: 500;
+    }
+    .g-block {
+    position: absolute;
+    top: 202.52px;
+    left: 220.16px;
+    font-weight: 500;
+    }
+    .mahesh-wagh {
+    position: absolute;
+    top: 237.04px;
+    left: 256.21px;
+    font-weight: 500;
+    }
+    .male {
+    position: absolute;
+    top: 271.55px;
+    left: 311.44px;
+    font-weight: 500;
+    }
+    .accountant {
+    position: absolute;
+    top: 306.07px;
+    left: 271.55px;
+    font-weight: 500;
+    }
+    .rehwa91gmailcom {
+    position: absolute;
+    top: 168px;
+    left: 217.85px;
+    text-decoration: underline;
+    font-weight: 500;
+    color: inherit;
+    }
+    .phone {
+    position: absolute;
+    top: 131.17px;
+    left: 12.27px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 174.9px;
+    }
+    .email {
+    position: absolute;
+    top: 165.7px;
+    left: 12.27px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 91.3px;
+    }
+    .address {
+    position: absolute;
+    top: 200.21px;
+    left: 12.27px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 108.2px;
+    }
+    .reported-to {
+    position: absolute;
+    top: 234.73px;
+    left: 12.27px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 108.2px;
+    }
+    .gender {
+    position: absolute;
+    top: 269.26px;
+    left: 12.27px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 100.5px;
+    }
+    .work {
+    position: absolute;
+    top: 303.77px;
+    left: 12.27px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 105.9px;
+    }
+    .group-inner {
+    position: absolute;
+    top: 0.77px;
+    left: 0px;
+    border-radius: 5.18px;
+    background-color: #30231f;
+    width: 355.9px;
+    height: 69.8px;
+    }
+    .business-id {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    }
+    .joining-date {
+    position: absolute;
+    top: 26.86px;
+    left: 0px;
+    font-weight: 500;
+    }
+    .business-id-2022070049-parent {
+    position: absolute;
+    top: 13.82px;
+    left: 12.59px;
+    width: 175px;
+    height: 43.9px;
+    font-size: 13.81px;
+    color: #ece3e0;
+    }
+    .group-child1 {
+    position: absolute;
+    top: 12.28px;
+    left: 330.62px;
+    width: 13px;
+    height: 13px;
+    }
+    .rectangle-div {
+    position: absolute;
+    top: 0.77px;
+    left: 370.51px;
+    box-shadow: 0px 1.6967471837997437px 1.7px rgba(0, 0, 0, 0.25);
+    border-radius: 3.79px;
+    background-color: #fff;
+    width: 324.5px;
+    height: 350.6px;
+    }
+    .rehwa-community1 {
+    position: absolute;
+    top: 95.13px;
+    left: 558.45px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 124.3px;
+    height: 15.3px;
+    }
+    .arts-and-crafts {
+    position: absolute;
+    top: 124.27px;
+    left: 581.46px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 101.3px;
+    height: 14.6px;
+    }
+    .div1 {
+    position: absolute;
+    top: 154.96px;
+    left: 596.04px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 86.7px;
+    height: 15.3px;
+    }
+    .years {
+    position: absolute;
+    top: 184.88px;
+    left: 633.63px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 49.1px;
+    height: 15.3px;
+    }
+    .div2 {
+    position: absolute;
+    top: 214.03px;
+    left: 619.81px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 62.9px;
+    height: 14.6px;
+    }
+    .div3 {
+    position: absolute;
+    top: 244.7px;
+    left: 665.84px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 16.9px;
+    height: 15.3px;
+    }
+    .company-name {
+    position: absolute;
+    top: 95.13px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 120.4px;
+    height: 28.4px;
+    }
+    .industry {
+    position: absolute;
+    top: 125.8px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 66.7px;
+    height: 29.1px;
+    }
+    .business-registration-number {
+    position: absolute;
+    top: 154.96px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 221.7px;
+    height: 29.9px;
+    }
+    .years-in-operation {
+    position: absolute;
+    top: 185.63px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 138.1px;
+    height: 29.1px;
+    }
+    .annual-revenue {
+    position: absolute;
+    top: 216.32px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 122px;
+    height: 29.9px;
+    }
+    .employees {
+    position: absolute;
+    top: 247px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 81.3px;
+    height: 29.1px;
+    }
+    .hand-woven-sarees {
+    position: absolute;
+    top: 271.55px;
+    left: 573.02px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 109.7px;
+    height: 12.3px;
+    }
+    .india-bali {
+    position: absolute;
+    top: 312.21px;
+    left: 615.21px;
+    font-weight: 500;
+    text-align: right;
+    display: inline-block;
+    width: 67.5px;
+    height: 15.3px;
+    }
+    .primary-productsservices {
+    position: absolute;
+    top: 276.92px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 155.7px;
+    height: 28.4px;
+    }
+    .market-coverage {
+    position: absolute;
+    top: 318.34px;
+    left: 382.02px;
+    font-size: 13.81px;
+    display: inline-block;
+    width: 130.4px;
+    height: 29.9px;
+    }
+    .business-information {
+    position: absolute;
+    top: 18.41px;
+    left: 380.48px;
+    font-size: 13.89px;
+    font-weight: 500;
+    display: inline-block;
+    width: 119.7px;
+    height: 46.8px;
+    }
+    .group-child2 {
+    position: absolute;
+    top: 17.54px;
+    left: 671.19px;
+    width: 12.4px;
+    height: 20.3px;
+    }
+    .group-child3 {
+    position: absolute;
+    top: 0px;
+    left: 370.51px;
+    border-radius: 5.18px;
+    background-color: #30231f;
+    width: 324.5px;
+    height: 70.6px;
+    }
+    .business-information1 {
+    position: absolute;
+    top: 18.41px;
+    left: 380.48px;
+    font-size: 13.89px;
+    font-weight: 500;
+    color: #ece3e0;
+    display: inline-block;
+    width: 119.7px;
+    height: 46.8px;
+    }
+    .group-child4 {
+    position: absolute;
+    top: 12.28px;
+    left: 674.29px;
+    width: 13px;
+    height: 13px;
+    }
+    .group-child5 {
+    position: absolute;
+    top: 164.59px;
+    left: 708.39px;
+    box-shadow: 0px 1.6967471837997437px 1.7px rgba(0, 0, 0, 0.25);
+    border-radius: 4.6px;
+    background-color: #fff;
+    width: 460.3px;
+    height: 186.4px;
+    }
+    .mahesh-wagh1 {
+    position: absolute;
+    top: 258.17px;
+    left: 1048.99px;
+    font-size: 15.34px;
+    font-weight: 500;
+    }
+    .accountant1 {
+    position: absolute;
+    top: 288.85px;
+    left: 1068.16px;
+    font-size: 15.34px;
+    font-weight: 500;
+    }
+    .primary-contact {
+    position: absolute;
+    top: 259.7px;
+    left: 722.97px;
+    }
+    .relationship {
+    position: absolute;
+    top: 290.39px;
+    left: 722.97px;
+    }
+    .div4 {
+    position: absolute;
+    top: 319.54px;
+    left: 1054.35px;
+    font-size: 15.34px;
+    font-weight: 500;
+    }
+    .phone-number {
+    position: absolute;
+    top: 321.07px;
+    left: 722.97px;
+    }
+    .group-child6 {
+    position: absolute;
+    top: 164.59px;
+    left: 708.39px;
+    border-radius: 5.18px;
+    background-color: #30231f;
+    width: 460.3px;
+    height: 59.1px;
+    }
+    .group-child7 {
+    position: absolute;
+    top: 178.4px;
+    left: 1142.57px;
+    width: 13px;
+    height: 13px;
+    }
+    .emergency-contact {
+    position: absolute;
+    top: 186.83px;
+    left: 722.2px;
+    font-size: 13.81px;
+    font-weight: 500;
+    color: #ece3e0;
+    }
+    .group-child8 {
+    position: absolute;
+    top: 0.77px;
+    left: 708.39px;
+    box-shadow: 0px 2.595351457595825px 2.6px rgba(0, 0, 0, 0.25);
+    border-radius: 3.89px;
+    background-color: #fff;
+    width: 460.3px;
+    height: 157.3px;
+    }
+    .chase-bank {
+    position: absolute;
+    top: 0px;
+    left: 23.78px;
+    font-weight: 500;
+    display: inline-block;
+    width: 69.8px;
+    height: 12.3px;
+    }
+    .div5 {
+    position: absolute;
+    top: 20.72px;
+    left: 0.77px;
+    font-weight: 500;
+    display: inline-block;
+    width: 91.3px;
+    height: 11.5px;
+    }
+    .chasus33 {
+    position: absolute;
+    top: 40.66px;
+    left: 26.08px;
+    font-weight: 500;
+    display: inline-block;
+    width: 67.5px;
+    height: 12.3px;
+    }
+    .chasus33xxx {
+    position: absolute;
+    top: 62.14px;
+    left: 0px;
+    font-weight: 500;
+    display: inline-block;
+    width: 92.1px;
+    height: 11.5px;
+    }
+    .chase-bank-parent {
+    position: absolute;
+    top: 75.18px;
+    left: 1055.89px;
+    width: 93.6px;
+    height: 73.6px;
+    }
+    .bank-name {
+    position: absolute;
+    top: 82.08px;
+    left: 722.97px;
+    font-size: 10.38px;
+    display: inline-block;
+    width: 62.1px;
+    height: 9.2px;
+    }
+    .bank-account-number {
+    position: absolute;
+    top: 102.02px;
+    left: 722.97px;
+    font-size: 10.38px;
+    display: inline-block;
+    width: 116.6px;
+    height: 9.2px;
+    }
+    .ifsc-code {
+    position: absolute;
+    top: 120.44px;
+    left: 722.97px;
+    font-size: 10.38px;
+    display: inline-block;
+    width: 58.3px;
+    height: 9.2px;
+    }
+    .swiftbic-code {
+    position: absolute;
+    top: 139.62px;
+    left: 722.97px;
+    font-size: 10.38px;
+    display: inline-block;
+    width: 87.4px;
+    height: 9.2px;
+    }
+    .group-child9 {
+    position: absolute;
+    top: 0px;
+    left: 708.39px;
+    border-radius: 5.18px;
+    background-color: #30231f;
+    width: 460.3px;
+    height: 65.2px;
+    }
+    .bank-information {
+    position: absolute;
+    top: 18.41px;
+    left: 719.42px;
+    font-size: 14.27px;
+    font-weight: 500;
+    color: #ece3e0;
+    }
+    .group-child10 {
+    position: absolute;
+    top: 17.37px;
+    left: 1140.67px;
+    width: 13px;
+    height: 13px;
+    }
+    .rectangle-parent {
+    position: absolute;
+    top: 528.66px;
+    left: 320px;
+    width: 1168.7px;
+    height: 351.3px;
+    font-size: 12.27px;
+    color: #30231f;
+    }
+    .profile {
+    width: 100%;
+    position: relative;
+    background-color: #ece3e0;
+    height: 980px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 18px;
+    color: #baada9;
+    font-family: Inter;
+    }
+    body{
+        font-family: Inter, sans-serif;
+        width: 100%;
+        height: 850px;
+        background-color: #ECE3E0;
+    }
+    .home-dashboard .text-wrapper-18 {
+        position: absolute;
+        top: 103px;
+        left: 320px;
+        font-family: "Inter-Medium", Helvetica;
+        font-weight: 500;
+        color: #2a1d19;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+    }
+    .group-2 {
+        position: absolute;
+        width: 802px;
+        height: 34px;
+        top: 48px;
+        left: 300px;
+        }
+    .hello-mahesh-tools {
+        position: absolute;
+        margin-top: 0.5px ;
+        /* top: 0;
+        left: 0; */
+        font-family: "Inter-Medium", Helvetica;
+        font-weight: 400;
+        color: transparent;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: normal;
+        }
+    .span {
+        font-weight: 500;
+        color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 320px;
+    }
+    
+    .text-wrapper-28 {
+        font-family: "Inter-Regular", Helvetica;
+        color: #474040;
+        font-size: 12px;
+        position: relative;
+        top: 60px;
+        left: 320px;
+    
+    
+    }
+    .profile_title{
+        color: #2A1D19;
+        font-family: Inter;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .rehwa-img{
+        position: relative;
+        left: 320px;
+        top: 30px;
+        width: 1170px;
+        height: 370px;
+        flex-shrink: 0;
+        fill: #FFF;
+        stroke-width: 3px;
+        stroke: #FFF;
+        
+    }
+    .rehwacommute{
+        position: relative;
+        font-family: Inter, sans-serif;
+        left: 496px;
+        top: 10px;
+        background-color: #ECE3E0;
+        color: #2A1D19;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        z-index: auto;
+    }

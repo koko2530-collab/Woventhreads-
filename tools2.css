@@ -1,0 +1,794 @@
+body {
+    width: 100%;
+    height: 850px;
+    background-color: #ECE3E0;
+    font-family: Inter, sans-serif;
+}
+
+/* Search input styling */
+.search-container {
+    position: absolute; 
+    top: 40px; 
+    left: 581px; 
+    width: 479px;
+    height: 34px; 
+    border-radius: 8px; 
+    border: 1px solid #3D3330; 
+    background-color: #ECE3E0; /* Background for the container */
+    z-index: 10; 
+    display: flex; 
+    align-items: center; /* Vertically centers items inside */
+    padding: 0 10px; 
+}
+
+.search-input {
+    width: 100%; 
+    height: 100%; 
+    padding-left: 30px;
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px; 
+    color: #3D3330; 
+    background-color: transparent; 
+    outline: none; }
+
+.search-input::placeholder {
+    color: #3D3330; /* Placeholder text color */
+    opacity: 0.7; /* Subtle placeholder text */
+}
+
+.search-icon {
+    position: absolute; /* Keeps it positioned inside the container */
+    left: 10px; /* Adjust icon's left position */
+    font-size: 16px; /* Matches design size */
+    color: #3D3330; /* Icon color */
+}
+
+
+/* Dropdown for suggestions */
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ECE3E0;
+    border: 1px solid #292424;
+    border-top: none;
+    z-index: 100;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.suggestions div {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.suggestions div:hover {
+    background-color: #ffffff;
+}
+
+/* code for sidebar */
+.Rectangle1215 {
+    width: 240px;
+    height: 1320px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #30231F;
+    z-index: 1; /* Lower z-index to place it behind the headings */
+}
+
+.heading, .Menu, .Homepage, .Tools, .HireWeavers, .Products, .Marketplace, .Community,.Account,.Profile,.Helpcenter,.Logout {
+    position: fixed;
+    color: #DFDFDF;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 550;
+    z-index: 10; /* Higher z-index to ensure headings are above the rectangle */
+}
+.heading{
+    top: 20px;
+    left: 20px;
+    font-family: 'Lucida Handwriting', cursive;
+    
+}
+
+/* Position each heading */
+.Menu {
+    font-size: 20px;
+    top: 100px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 700;
+}
+
+.Homepage {
+    top: 135px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Tools {
+    background-color: #160d0a;
+    padding-left: 35px;
+    padding-right: 160px;
+    top: 170px;
+    left: 0px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.HireWeavers {
+    top: 205px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Products {
+    top: 240px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Marketplace {
+    top: 275px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Community {
+    top: 310px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Account {
+    font-size: 20px;
+    top: 345px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 700;
+
+}
+
+.Profile {
+    top: 380px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Helpcenter {
+    top: 415px;
+    left: 35px;
+    color: #d4c8c4;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.Logout {
+    top: 450px;
+    left: 35px;
+    color: rgb(136, 13, 13);
+    font-weight: 400;
+    font-size: 18px
+
+}
+
+.NeedSomeHelp {
+    position: absolute;
+    top: 135px;
+    left: 320px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #2a1d19;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.home-dashboard .text-wrapper-18 {
+    position: absolute;
+    top: 125px;
+    left: 320px;
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 500;
+    color: #2a1d19;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+.group-2 {
+    position: absolute;
+    width: 802px;
+    height: 34px;
+    top: 48px;
+    left: 320px;
+    }
+.hello-mahesh-tools {
+    position: absolute;
+    margin-top: 0.5px ;
+    /* top: 0;
+    left: 0; */
+    font-family: "Inter-Medium", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    }
+.span {
+        font-weight: 500;
+        color: #000000;
+        position: absolute;
+        top: 40px;
+        left: 300px;
+}
+    
+.text-wrapper-28 {
+        font-family: "Inter-Regular", Helvetica;
+        color: #474040;
+        font-size: 12px;
+        position: relative;
+        top: 60px;
+        left: 300px;
+    
+    
+}
+.weaving-tools {
+    position: absolute;
+    top: 132px;
+    left: 323.5px;
+    font-size: 21.86px;
+    font-weight: 500;
+    color: #2a1d19;
+    display: inline-block;
+    width: 183.8px;
+    height: 21.1px;
+}
+.image-137-icon {
+    position: absolute;
+    top: 134.18px;
+    left: 301.09px;
+    width: 17.5px;
+    height: 17.5px;
+    object-fit: cover;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5.47px;
+    background-color: #f2e8e8;
+    border: 1.1px solid #351717;
+    box-sizing: border-box;
+    width: 161.8px;
+    height: 30.6px;
+    text-align: center;
+}
+.top-rated {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    font-weight: 500;
+    display: inline-block;
+    width: 74.6px;
+    height: 17.3px;
+    text-align: center;
+}
+.top-rated-wrapper {
+    position: absolute;
+    top: 6.56px;
+    left: 39.35px;
+    width: 74.6px;
+    height: 17.3px;
+}
+.image-96-icon {
+    position: absolute;
+    top: 4.38px;
+    left: 9.84px;
+    width: 21.9px;
+    height: 21.9px;
+    object-fit: cover;
+}
+.group-item {
+    position: absolute;
+    top: 13.12px;
+    left: 141.02px;
+    width: 8.1px;
+    height: 4.3px;
+}
+.group-wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 161.8px;
+    height: 30.6px;
+}
+.bestseller {
+    position: absolute;
+    top: 6.55px;
+    left: 45.87px;
+    font-weight: 500;
+    display: inline-block;
+    width: 73.9px;
+    height: 17.3px;
+}
+.group-container {
+    position: absolute;
+    top: 0px;
+    left: 183.66px;
+    width: 161.8px;
+    height: 30.6px;
+}
+.new-releases {
+    position: absolute;
+    top: 6.55px;
+    left: 30.67px;
+    font-weight: 500;
+    display: inline-block;
+    width: 102.8px;
+    height: 17.5px;
+}
+.rectangle-parent1 {
+    position: absolute;
+    top: 0px;
+    left: 183.67px;
+    width: 161.8px;
+    height: 30.6px;
+}
+.group-div {
+    position: absolute;
+    top: 0px;
+    left: 367.32px;
+    width: 345.5px;
+    height: 30.6px;
+}
+.group-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 712.8px;
+    height: 30.6px;
+}
+.home-dashboard-inner {
+    position: absolute;
+    top: 203.08px;
+    left: 300px;
+    width: 712.8px;
+    height: 30.6px;
+    font-size: 15.31px;
+    color: #343434;
+}
+.group-child4 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fafafa;
+    width: 204.4px;
+    height: 271.5px;
+}
+.image-95-icon {
+    position: absolute;
+    top: 11.73px;
+    left: 14.24px;
+    border-radius: 2.88px;
+    width: 177.7px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.handloom-shuttle {
+    position: absolute;
+    top: 0px;
+    left: 1.92px;
+    font-weight: 500;
+    color: #2a1d19;
+}
+.tool-suppliers {
+    position: absolute;
+    top: 15.35px;
+    left: 1.92px;
+    font-size: 10.01px;
+    font-weight: 500;
+    display: inline-block;
+    width: 150.2px;
+    height: 13.8px;
+}
+.div {
+    position: absolute;
+    top: 26.86px;
+    left: 12.13px;
+    font-weight: 500;
+}
+.image-138-icon {
+    position: absolute;
+    top: 28.11px;
+    left: 0px;
+    width: 12.7px;
+    height: 12.7px;
+    object-fit: cover;
+}
+.handloom-shuttle-parent {
+    position: absolute;
+    top: 219.7px;
+    left: 11.52px;
+    width: 152.1px;
+    height: 41.9px;
+    color: #616161;
+}
+.group-child5 {
+    position: absolute;
+    top: 17.21px;
+    left: 116.12px;
+    border-radius: 6.26px;
+    background-color: #463029;
+    width: 59.2px;
+    height: 25.5px;
+}
+.buy {
+    position: absolute;
+    top: 251.73px;
+    left: 134.03px;
+    font-weight: 600;
+    display: inline-block;
+    width: 23.3px;
+    height: 13.8px;
+    font-family: Inter, sans-serif;
+}
+.new {
+    position: absolute;
+    top: 23.06px;
+    left: 131.49px;
+    font-weight: 600;
+    display: inline-block;
+    width: 28.4px;
+    height: 13.8px;
+}
+.group-child6 {
+    position: absolute;
+    top: 233.13px;
+    left: 132.4px;
+    border-radius: 3.84px;
+    background-color: #463029;
+    width: 59.5px;
+    height: 24.9px;
+}
+.buy1 {
+    position: absolute;
+    top: 237.99px;
+    left: 150.84px;
+    font-size: 12.16px;
+    font-weight: 600;
+    display: inline-block;
+    width: 22.6px;
+    height: 12.6px;
+    width: 22.6px;
+    position: relative;
+    font-size: 12.16px;
+    font-weight: 600;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    height: 12.6px;
+    font-family: Inter, sans-serif;
+}
+.image-145-icon {
+    position: absolute;
+    top: 11.73px;
+    left: 13.41px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.rectangle-parent2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 204.4px;
+    height: 271.5px;
+}
+.charkha-parent {
+    position: absolute;
+    top: 219.7px;
+    left: 11.51px;
+    width: 152.1px;
+    height: 41.9px;
+    color: #616161;
+}
+.buy3 {
+    position: absolute;
+    top: 237.99px;
+    left: 152.52px;
+    font-size: 12.16px;
+    font-weight: 600;
+    display: inline-block;
+    width: 22.6px;
+    height: 12.6px;
+    width: 22.6px;
+    position: relative;
+    font-size: 12.16px;
+    font-weight: 600;
+    font-family: Inter;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    height: 12.6px;
+    font-family: Inter, sans-serif;
+}
+.rectangle-parent3 {
+    position: absolute;
+    top: 0px;
+    left: 234.63px;
+    width: 204.4px;
+    height: 271.5px;
+}
+.group-child10 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0.9593935608863831px 0.9593935608863831px 2.88px rgba(0, 0, 0, 0.55);
+    background-color: #fafafa;
+    width: 204.4px;
+    height: 271.5px;
+}
+.rectangle-parent4 {
+    position: absolute;
+    top: 0px;
+    left: 469.27px;
+    width: 204.4px;
+    height: 271.5px;
+}
+.image-95 {
+    position: absolute;
+    top: 11.73px;
+    left: 14.24px;
+    border-radius: 2.88px;
+    width: 177.7px;
+    height: 197.8px;
+}
+.rectangle-parent5 {
+    position: absolute;
+    top: 0px;
+    left: 703.91px;
+    width: 204.4px;
+    height: 271.5px;
+}
+.rectangle-parent6 {
+    position: absolute;
+    top: 0px;
+    left: 938.55px;
+    width: 204.4px;
+    height: 271.5px;
+}
+.group-parent1 {
+    position: absolute;
+    top: 302.95px;
+    left: 300.84px;
+    filter: drop-shadow(0px 3.3519551753997803px 3.35px rgba(0, 0, 0, 0.25));
+    width: 1142.9px;
+    height: 271.5px;
+    font-size: 12.52px;
+}
+.group-parent2 {
+    position: absolute;
+    top: 610.49px;
+    left: 300.84px;
+    width: 1142.9px;
+    height: 271.5px;
+    font-size: 12.52px;
+}
+.image-138-icon10 {
+    position: absolute;
+    top: 314.68px;
+    left: 314.24px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-130-icon {
+    position: absolute;
+    top: 314.68px;
+    left: 548.88px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-139-icon {
+    position: absolute;
+    top: 314.68px;
+    left: 783.52px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 198.6px;
+    object-fit: cover;
+}
+.image-140-icon {
+    position: absolute;
+    top: 314.68px;
+    left: 1018.16px;
+    border-radius: 4.19px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-141-icon {
+    position: absolute;
+    top: 314.68px;
+    left: 1252.8px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-142-icon {
+    position: absolute;
+    top: 622.23px;
+    left: 314.24px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-143-icon {
+    position: absolute;
+    top: 622.23px;
+    left: 548.88px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-144-icon {
+    position: absolute;
+    top: 622.23px;
+    left: 783.52px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-145-icon9 {
+    position: absolute;
+    top: 622.23px;
+    left: 1018.16px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.image-131-icon {
+    position: absolute;
+    top: 622.23px;
+    left: 1252.8px;
+    border-radius: 2.51px;
+    width: 178.5px;
+    height: 197.8px;
+    object-fit: cover;
+}
+.home-dashboard-child1 {
+    position: absolute;
+    top: 320.55px;
+    left: 1371.79px;
+    border-radius: 4.19px;
+    background-color: #463029;
+    width: 59.5px;
+    height: 25.1px;
+}
+.home-dashboard-child2 {
+    position: absolute;
+    top: 320.55px;
+    left: 1137.15px;
+    border-radius: 4.19px;
+    background-color: #463029;
+    width: 59.5px;
+    height: 25.1px;
+}
+.new8 {
+    position: absolute;
+    top: 326.41px;
+    left: 1388.55px;
+    font-size: 12.52px;
+    font-weight: 600;
+    display: inline-block;
+    width: 28.5px;
+    height: 12.6px;
+}
+.new9 {
+    position: absolute;
+    top: 326.41px;
+    left: 1153.91px;
+    font-size: 12.52px;
+    font-weight: 600;
+    display: inline-block;
+    width: 28.5px;
+    height: 12.6px;
+}
+.wevaingtools{
+    position: absolute;
+    left: 340px;
+    top: 150px;
+    width: 183.8px;
+    font-size: 21.86px;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+    color: #2a1d19;
+    text-align: left;
+    display: inline-block;
+    height: 21.1px;
+}
+.iconika{
+    width: 20px;
+    position: relative;
+    left: 300px;
+    top: 140px;
+    height: 20.5px;
+    
+}
+.backbtn{
+    position: absolute;
+    left: 300px;
+    top: 110px;
+    height: 20px;
+    width: 20px;
+}
+.new-releasos{
+    position: absolute;
+    top: 6.55px;
+    left: 55.67px;
+    font-weight: 500;
+    display: inline-block;
+    width: 102.8px;
+    height: 17.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
